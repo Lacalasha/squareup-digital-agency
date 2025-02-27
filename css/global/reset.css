@@ -1,38 +1,7 @@
 :root {
-  /* colors */
-  --first-color: white;
-  --second-color: black;
-  --third-color: #9eff00;
-  --fourth-color: #b1ff33;
-  --fifth-color: #c5ff66;
-  --sixth-color: #d8ff99;
-  --seventh-color: #ecffcc;
-  --eighth-color: #f5f7e5;
-  --ninth-color: #f9fff0;
-  --tenth-color: #fdfffa;
-  --eleventh-color: #191919;
-  --twelfth-color: #262626;
-  --thirteenth-color: #333333;
-  --fourteenth-color: #4c4c4d;
-  --fifteenth-color: #59595a;
-  --sixteenth-color: #656567;
-  --seventeenth-color: #98989a;
-  --eighteenth-color: #e6e6e6;
-  --gradient-color-first: linear-gradient(
-    to right,
-    rgba(158, 255, 0, 1) 22%,
-    rgba(158, 255, 0, 0) 71%
-  );
-  --gradient-color-second: linear-gradient(
-    to right,
-    rgba(36, 36, 36, 1) 0%,
-    rgba(36, 36, 36, 0) 100%
-  );
-  --gradient-color-third: linear-gradient(
-    to right,
-    rgba(46, 46, 46, 1) 0%,
-    rgba(46, 46, 46, 0) 100%
-  );
+  --comainBG-color: #262626;
+  --greenButton-color: #9eff00;
+  --hover-color: #4c4c4d;
 }
 
 /* CSS reset: https://www.joshwcomeau.com/css/custom-css-reset/ */
