@@ -62,17 +62,17 @@ h6 {
   overflow-wrap: break-word;
 }
 
-/* @font-face {
-  font-family: ;
-  src: url();
-} */
+@font-face {
+  font-family: "Barlow Regular";
+  src: url("/assets/font/Barlow-Regular.ttf");
+}
 
 body {
   display: flex;
   min-height: 100vh;
   flex-direction: column;
   background-color: rgb(var(--color-white));
-  /* font-family: ; */
+  font-family: "Barlow Regular";
 }
 
 ul {
