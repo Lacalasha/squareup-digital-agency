@@ -1,10 +1,11 @@
-/* .mainContainer {
-} */
+.mainContainer {
+}
 .mainContainer .headerContainer {
   width: 100%;
   background-color: #1a1a1a;
   display: flex;
   flex-direction: column;
+  border-bottom: 1px solid #262626;
 
   /* სტილებიაქვს დასამატებელი */
 }
@@ -131,4 +132,67 @@ footer .footerContact p {
 .footerBottom .extraFooterParagraph {
   font-size: 14px;
   color: #98989a60;
+}
+.heroSection {
+  background-color: lightcoral;
+  max-width: 1280px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-left: 80px;
+  border: 1px solid #262626;
+  background-image: url(/assets/images/herocont.png);
+}
+.heroSection .heroSectionInfo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.heroSection .heroSectionInfo h2 {
+  font-weight: 600;
+  font-size: 48px;
+  color: #ffffff;
+  max-width: 500px;
+  text-align: center;
+  line-height: 57px;
+  margin-top: 112px;
+}
+.heroSectionInfo .heroSectionHelpfull {
+  max-width: 699px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  border: 1px solid black;
+  padding: 18px 30px;
+  background-color: var(--comainBG-color);
+  border-radius: 8px;
+  font-size: 18px;
+  margin-top: 30px;
+}
+.heroSectionInfo .heroSectionHelpfull p {
+  color: #98989a60;
+}
+.heroSectionInfo .heroSectionHelpfull button {
+  padding: 8px 10px;
+  color: #ffffff;
+  background-color: red;
+  border-radius: 6px;
+}
+.heroSection .heroButtonSection {
+  display: flex;
+  gap: 13px;
+  margin: 40px 0 274px 0;
+}
+.heroSection .heroButtonSection button {
+  padding: 14px 20px;
+  background-color: #333333;
+  border-radius: 8px;
+  font-weight: 500;
+  font-size: 14px;
+}
+#contactUsButtonGreen {
+  color: #262626;
+  background-color: var(--greenButton-color);
 }
