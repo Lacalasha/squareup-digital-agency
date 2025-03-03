@@ -50,90 +50,85 @@ header ul li {
 }
 
 /* footerის css */
-
 footer {
+  max-width: 1440px;
+  width: 100%;
   background-color: #1a1a1a;
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 20px 0;
-  width: 100%;
+  padding: 40px 0;
 }
 
 footer .footerTop {
-  max-width: 1440px;
+  max-width: 1280px;
   width: 100%;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 0 20px;
+  border-bottom: 1px solid #262626;
+  padding-bottom: 40px;
 }
-
-footer .footerTop img {
+footer .footerTop .logoFooter img {
   width: 118px;
   height: 40px;
 }
-
-footer nav ul {
+.footerTop nav {
   display: flex;
-  gap: 30px;
-}
-
-footer nav ul a {
-  color: #e6e6e6;
-  text-decoration: none;
-}
-
-footer .footerTop button {
-  white-space: nowrap;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
   gap: 20px;
-  width: 337px;
-  height: 72px;
-  padding: 10px 20px;
-  border: 1px solid var(--hover-color);
-  border-radius: 8px;
-  color: #e6e6e6;
 }
-
-footer .footerTop button .footerBtnImg {
+.footerTop .footerContact {
   display: flex;
+  gap: 20px;
+  align-items: center;
+  padding: 10px 10px 10px 20px;
   border-radius: 8px;
+  border: 1px solid #262626;
+}
+.footerTop .footerContact .contactInfo {
+  display: flex;
   gap: 10px;
 }
-
-footer .footerTop button .footerBtnImg img {
-  width: 176px;
-  height: 52px;
+footer nav a {
+  color: #e6e6e6;
+  font-weight: 500;
 }
 
-footer .footerBottom {
-  border-top: 1px solid var(--hover-color);
-  width: 1280px;
+footer .contactInfo img {
+  background: linear-gradient(to bottom, #242424, rgba(36, 36, 36, 0));
+  border-radius: 6px;
+  width: 52px;
+  height: 52px;
+}
+footer .footerContact p {
+  font-weight: 500;
+  color: #e6e6e6;
+}
+.footerBottom {
+  max-width: 1280px;
+  width: 100%;
   display: flex;
   justify-content: space-between;
   align-items: center;
   margin-top: 40px;
-  padding-top: 42px;
-  text-align: center;
 }
-
-footer .footerBottom a {
-  display: flex;
-  align-items: center;
-  gap: 6px;
-  color: #e6e6e6;
-  border-bottom: 1px solid var(--hover-color);
-  padding-bottom: 12px;
-}
-
-footer .footerBottom p {
-  color: #98989a;
-}
-
-.footerBottom .footerContact {
+.footerBottom .contactViaSocials {
   display: flex;
   gap: 22px;
+}
+.footerBottom .contactViaSocials a {
+  color: #e6e6e6;
+}
+.contactEmail,
+.contactPhone,
+.contactLocation {
+  display: flex;
+  gap: 6px;
+  padding-bottom: 12px;
+  border-bottom: 1px solid #262626;
+}
+
+.footerBottom .extraFooterParagraph {
+  font-size: 14px;
+  color: #98989a60;
 }
