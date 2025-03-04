@@ -4,6 +4,10 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Square Up Digital Agency</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.2.0/remixicon.min.css"
+    />
     <link rel="stylesheet" href="css/global/reset.css" />
     <link rel="stylesheet" href="css/global/common.css" />
     <link rel="stylesheet" href="css/pages/home.css" />
@@ -17,7 +21,7 @@
           <a href="index.html"
             ><img src="assets/vector/Logo.svg" alt="siteLogo"
           /></a>
-          <nav>
+          <nav class="navMenu" id="nav-menu">
             <ul>
               <li><a href="#">Home</a></li>
               <li><a href="pages/service.html">Services</a></li>
@@ -26,8 +30,16 @@
               <li><a href="#">About</a></li>
               <li><a href="#">Careers</a></li>
             </ul>
+            <div class="navClose" id="nav-close">
+              <i style="color: white" class="ri-close-large-line"></i>
+            </div>
           </nav>
-          <button>Contact Us</button>
+          <button class="contactUs">Contact Us</button>
+
+          <!-- Burger menu icon -->
+          <div class="navToggle" id="nav-toggle">
+            <i style="color: white" class="ri-menu-line"></i>
+          </div>
         </header>
       </div>
       <main>
@@ -53,61 +65,63 @@
 
       <!-- აქედან იწყება footer -->
       <footer>
-        <div class="footerTop">
-          <div class="logoFooter">
-            <a href="index.html">
-              <img src="assets/vector/Logo.svg" alt="logo"
-            /></a>
-          </div>
+        <div class="footerContainer">
+          <div class="footerTop">
+            <div class="logoFooter">
+              <a href="index.html">
+                <img src="assets/vector/Logo.svg" alt="logo"
+              /></a>
+            </div>
 
-          <nav>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="#">Services</a></li>
-            <li><a href="#">Work</a></li>
-            <li><a href="#">Process</a></li>
-            <li><a href="#">About</a></li>
-            <li><a href="#">Careers</a></li>
-            <li><a href="#">Contact</a></li>
-          </nav>
-          <div class="footerContact">
-            <p>Stay Connected</p>
-            <div class="contactInfo">
-              <div class="facebookF">
-                <a href="https://www.facebook.com/"
-                  ><img src="assets/vector/facebook.svg" alt=""
-                /></a>
-              </div>
-              <div class="twitterF">
-                <a href="https://x.com/home"
-                  ><img src="assets/vector/twitter.svg" alt=""
-                /></a>
-              </div>
-              <div class="linkedF">
-                <a href="https://ge.linkedin.com/"
-                  ><img src="assets/vector/linkedin.svg" alt=""
-                /></a>
+            <nav>
+              <li><a href="index.html">Home</a></li>
+              <li><a href="#">Services</a></li>
+              <li><a href="#">Work</a></li>
+              <li><a href="#">Process</a></li>
+              <li><a href="#">About</a></li>
+              <li><a href="#">Careers</a></li>
+              <li><a href="#">Contact</a></li>
+            </nav>
+            <div class="footerContact">
+              <p>Stay Connected</p>
+              <div class="contactInfo">
+                <div class="facebookF">
+                  <a href="https://www.facebook.com/"
+                    ><img src="assets/vector/facebook.svg" alt=""
+                  /></a>
+                </div>
+                <div class="twitterF">
+                  <a href="https://x.com/home"
+                    ><img src="assets/vector/twitter.svg" alt=""
+                  /></a>
+                </div>
+                <div class="linkedF">
+                  <a href="https://ge.linkedin.com/"
+                    ><img src="assets/vector/linkedin.svg" alt=""
+                  /></a>
+                </div>
               </div>
             </div>
           </div>
-        </div>
-        <div class="footerBottom">
-          <div class="contactViaSocials">
-            <div class="contactEmail">
-              <img src="assets/vector/email.svg" alt="email" />
-              <a href="#">hello@squareup.com</a>
+          <div class="footerBottom">
+            <div class="contactViaSocials">
+              <div class="contactEmail">
+                <img src="assets/vector/email.svg" alt="email" />
+                <a href="#">hello@squareup.com</a>
+              </div>
+              <div class="contactPhone">
+                <img src="assets/vector/phone.svg" alt="phone" />
+                <a href="#">+91 91813 23 2309</a>
+              </div>
+              <div class="contactLocation">
+                <img src="assets/vector/location.svg" alt="location" />
+                <a href="#">Somewhere in the World</a>
+              </div>
             </div>
-            <div class="contactPhone">
-              <img src="assets/vector/phone.svg" alt="phone" />
-              <a href="#">+91 91813 23 2309</a>
-            </div>
-            <div class="contactLocation">
-              <img src="assets/vector/location.svg" alt="location" />
-              <a href="#">Somewhere in the World</a>
-            </div>
+            <p class="extraFooterParagraph">
+              © 2023 SquareUp. All rights reserved.
+            </p>
           </div>
-          <p class="extraFooterParagraph">
-            © 2023 SquareUp. All rights reserved.
-          </p>
         </div>
       </footer>
     </div>
