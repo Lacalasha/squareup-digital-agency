@@ -1,3 +1,8 @@
+.mainContainer {
+  min-height: 100dvh;
+  display: flex;
+  flex-direction: column;
+}
 .mainContainer .headerContainer {
   width: 100%;
   background-color: #1a1a1a;
@@ -148,6 +153,7 @@ main {
   flex-direction: column;
   align-items: center;
   width: 100%;
+  flex: 1;
 }
 
 /* Hero section */
