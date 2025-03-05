@@ -123,17 +123,26 @@ footer .footerContact p {
   align-items: center;
   margin-top: 40px;
 }
+
 .footerBottom .contactViaSocials {
   display: flex;
   gap: 22px;
 }
+
+.footerBottom .contactViaSocials img {
+  width: 24px;
+  height: 24px;
+}
+
 .footerBottom .contactViaSocials a {
   color: #e6e6e6;
 }
 .contactEmail,
 .contactPhone,
 .contactLocation {
+  width: 100%;
   display: flex;
+  justify-content: center;
   gap: 6px;
   padding-bottom: 12px;
   border-bottom: 1px solid #262626;
@@ -294,3 +303,67 @@ main {
     display: none;
   }
 }
+
+/* footer mobile start */
+@media (max-width: 390px) {
+  footer {
+    max-width: 390px;
+    width: 100%;
+    padding: 30px 16px;
+  }
+
+  footer .footerTop {
+    max-width: 358px;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+  }
+
+  footer .footerTop .logoFooter {
+    max-width: 148.1px;
+    display: flex;
+    justify-content: center;
+  }
+
+  footer .footerTop nav {
+    max-width: 358px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding-top: 15px;
+    gap: 20px;
+    border-top: 1px solid #262626;
+  }
+
+  footer .footerTop .footerContact {
+    width: 358px;
+    height: 122px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .footerBottom {
+    width: 358px;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .footerBottom .contactViaSocials {
+    width: 358px;
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+  }
+
+  .footerBottom .contactViaSocials img {
+    width: 24px;
+    height: 24px;
+  }
+
+  /* .extraFooterParagraph {
+    margin-top: 20px;
+  } */
+}
+
+/* footer mobile end */
