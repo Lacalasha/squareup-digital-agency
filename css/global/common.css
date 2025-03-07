@@ -28,7 +28,7 @@
   width: 118px;
   height: 40px;
 }
-.headerContainer header button {
+.headerContainer header .contactUs {
   padding: 12px 18px;
   background-color: var(--greenButton-color);
   border-radius: 6px;
@@ -276,7 +276,18 @@ main {
     color: white;
     cursor: pointer;
   }
+  .navToggle {
+    display: flex;
+    justify-content: space-between;
+  }
+  .navToggle button img {
+    width: 46px;
+    height: 46px;
+  }
 
+  .navToggle a {
+    display: block;
+  }
   .showMenu {
     left: 0;
   }
