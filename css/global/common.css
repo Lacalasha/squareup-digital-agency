@@ -285,9 +285,6 @@ main {
     height: 46px;
   }
 
-  .navToggle a {
-    display: block;
-  }
   .showMenu {
     left: 0;
   }
