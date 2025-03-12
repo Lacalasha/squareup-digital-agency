@@ -28,7 +28,7 @@
   width: 118px;
   height: 40px;
 }
-.headerContainer header button {
+.headerContainer header .contactUs {
   padding: 12px 18px;
   background-color: var(--greenButton-color);
   border-radius: 6px;
@@ -191,6 +191,14 @@ main {
     color: white;
     cursor: pointer;
   }
+  .navToggle {
+    display: flex;
+    justify-content: space-between;
+  }
+  .navToggle button img {
+    width: 46px;
+    height: 46px;
+  }
 
   .showMenu {
     left: 0;
@@ -209,6 +217,7 @@ main {
     display: none;
   }
 }
+
 
 /* our service start */
 
@@ -379,3 +388,67 @@ footer .footerContact p {
 }
 
 /* footer end */
+=======
+/* footer mobile start */
+@media (max-width: 390px) {
+  footer {
+    max-width: 390px;
+    width: 100%;
+    padding: 30px 16px;
+  }
+
+  footer .footerTop {
+    max-width: 358px;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+  }
+
+  footer .footerTop .logoFooter {
+    max-width: 148.1px;
+    display: flex;
+    justify-content: center;
+  }
+
+  footer .footerTop nav {
+    max-width: 358px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding-top: 15px;
+    gap: 20px;
+    border-top: 1px solid #262626;
+  }
+
+  footer .footerTop .footerContact {
+    width: 358px;
+    height: 122px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .footerBottom {
+    width: 358px;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .footerBottom .contactViaSocials {
+    width: 358px;
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+  }
+
+  .footerBottom .contactViaSocials img {
+    width: 24px;
+    height: 24px;
+  }
+
+  /* .extraFooterParagraph {
+    margin-top: 20px;
+  } */
+}
+
+/* footer mobile end */
