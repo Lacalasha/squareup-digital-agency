@@ -77,9 +77,9 @@ main {
   border: 1px solid #262626;
   background-image: url("/assets/images/heroBgOne.png"),
     url("/assets/images/heroBgTwo.png");
-  background-repeat: no-repeat no-repeat;
-  background-size: contain;
-  background-position: bottom center;
+  background-repeat: no-repeat, no-repeat;
+  background-size: contain, cover;
+  background-position: bottom, center;
 }
 .heroSection .heroSectionInfo {
   display: flex;
@@ -311,7 +311,7 @@ footer .footerContainer {
   display: flex;
   flex-direction: column;
   max-width: 1440px;
-  padding: 20px 40px;
+  padding: 0px 40px;
   width: 100%;
 }
 
