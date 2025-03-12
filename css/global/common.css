@@ -22,7 +22,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 20px 80px;
+  padding: 20px 40px;
 }
 .headerContainer header img {
   width: 118px;
@@ -69,7 +69,7 @@ main {
 
 /* Hero section */
 .heroSection {
-  max-width: 1280px;
+  max-width: 1360px;
   width: 100%;
   display: flex;
   flex-direction: column;
@@ -221,7 +221,7 @@ main {
 /* our service start */
 
 .ourServiceSection {
-  max-width: 1280px;
+  max-width: 1360px;
   width: 100%;
   display: flex;
   flex-direction: column;
@@ -242,7 +242,6 @@ main {
 }
 
 .ourServicesText {
-  position: absolute;
   text-align: center;
   color: white;
 }
@@ -311,7 +310,8 @@ footer {
 footer .footerContainer {
   display: flex;
   flex-direction: column;
-  max-width: 1280px;
+  max-width: 1440px;
+  padding: 20px 40px;
   width: 100%;
 }
 
@@ -389,28 +389,24 @@ footer .footerContact p {
 /* footer end */
 
 /* footer mobile start */
-@media (max-width: 390px) {
+@media screen and (max-width: 1024px) {
   footer {
-    max-width: 390px;
     width: 100%;
     padding: 30px 16px;
   }
 
   footer .footerTop {
-    max-width: 358px;
     display: flex;
     flex-direction: column;
     gap: 30px;
   }
 
   footer .footerTop .logoFooter {
-    max-width: 148.1px;
     display: flex;
     justify-content: center;
   }
 
   footer .footerTop nav {
-    max-width: 358px;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -420,7 +416,6 @@ footer .footerContact p {
   }
 
   footer .footerTop .footerContact {
-    width: 358px;
     height: 122px;
     display: flex;
     flex-direction: column;
@@ -428,13 +423,11 @@ footer .footerContact p {
   }
 
   .footerBottom {
-    width: 358px;
     display: flex;
     flex-direction: column;
   }
 
   .footerBottom .contactViaSocials {
-    width: 358px;
     display: flex;
     flex-direction: column;
     margin: auto;
