@@ -218,7 +218,6 @@ main {
   }
 }
 
-
 /* our service start */
 
 .ourServiceSection {
@@ -388,7 +387,7 @@ footer .footerContact p {
 }
 
 /* footer end */
-=======
+
 /* footer mobile start */
 @media (max-width: 390px) {
   footer {
