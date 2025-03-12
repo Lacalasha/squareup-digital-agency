@@ -57,104 +57,6 @@ header ul li {
 
 /* Header end */
 
-/* footer start */
-footer {
-  width: 100%;
-  background-color: #1a1a1a;
-  display: flex;
-  justify-content: center;
-  padding: 40px 0;
-}
-
-footer .footerContainer {
-  display: flex;
-  flex-direction: column;
-  max-width: 1280px;
-  width: 100%;
-}
-
-footer .footerTop {
-  width: 100%;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  border-bottom: 1px solid #262626;
-  padding-bottom: 40px;
-}
-footer .footerTop .logoFooter img {
-  width: 118px;
-  height: 40px;
-}
-.footerTop nav {
-  display: flex;
-  gap: 20px;
-}
-.footerTop .footerContact {
-  display: flex;
-  gap: 20px;
-  align-items: center;
-  padding: 10px 10px 10px 20px;
-  border-radius: 8px;
-  border: 1px solid #262626;
-}
-.footerTop .footerContact .contactInfo {
-  display: flex;
-  gap: 10px;
-}
-footer nav a {
-  color: #e6e6e6;
-  font-weight: 500;
-}
-
-footer .contactInfo img {
-  background: linear-gradient(to bottom, #242424, rgba(36, 36, 36, 0));
-  border-radius: 6px;
-  width: 52px;
-  height: 52px;
-}
-footer .footerContact p {
-  font-weight: 500;
-  color: #e6e6e6;
-}
-.footerBottom {
-  width: 100%;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  margin-top: 40px;
-}
-
-.footerBottom .contactViaSocials {
-  display: flex;
-  gap: 22px;
-}
-
-.footerBottom .contactViaSocials img {
-  width: 24px;
-  height: 24px;
-}
-
-.footerBottom .contactViaSocials a {
-  color: #e6e6e6;
-}
-.contactEmail,
-.contactPhone,
-.contactLocation {
-  width: 100%;
-  display: flex;
-  justify-content: center;
-  gap: 6px;
-  padding-bottom: 12px;
-  border-bottom: 1px solid #262626;
-}
-
-.footerBottom .extraFooterParagraph {
-  font-size: 14px;
-  color: #98989a60;
-}
-
-/* footer end */
-
 /* main Start */
 
 main {
@@ -199,20 +101,20 @@ main {
   display: flex;
   align-items: center;
   gap: 6px;
-  border: 1px solid black;
+  border: 1px solid #262626;
   padding: 18px 30px;
-  background-color: var(--comainBG-color);
+  background-color: #1a1a1a;
   border-radius: 8px;
   font-size: 18px;
   margin-top: 30px;
 }
 .heroSectionInfo .heroSectionHelpfull p {
-  color: #98989a60;
+  color: #98989a;
 }
 .heroSectionInfo .heroSectionHelpfull button {
   padding: 8px 10px;
   color: #ffffff;
-  background-color: red;
+  background-color: #262626;
   border-radius: 6px;
 }
 .heroSection .heroButtonSection {
@@ -222,12 +124,16 @@ main {
 }
 .heroSection .heroButtonSection button {
   padding: 14px 20px;
-  background-color: #333333;
+  border: 1px solid #262626;
+  background-color: #1a1a1a;
+  color: white;
   border-radius: 8px;
   font-weight: 500;
   font-size: 14px;
 }
 #contactUsButtonGreen {
+  font-weight: 500;
+  font-size: 15px;
   color: #262626;
   background-color: var(--greenButton-color);
 }
@@ -312,6 +218,177 @@ main {
   }
 }
 
+
+/* our service start */
+
+.ourServiceSection {
+  max-width: 1280px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  border: 1px solid #262626;
+}
+
+.ourServiceContainer {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.ourServiceContainer img {
+  width: 100%;
+  height: auto;
+  opacity: 60%;
+}
+
+.ourServicesText {
+  position: absolute;
+  text-align: center;
+  color: white;
+}
+
+.ourServicesText h4 {
+  font-size: 38px;
+}
+
+.ourServiceCards {
+  display: flex;
+}
+
+.ourServiceCard {
+  max-width: 426px;
+  border-right: 1px solid #262626;
+  padding: 40px;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.ourServiceCard .cardInfo img {
+  margin-bottom: 30px;
+  width: 70px;
+  height: 70px;
+}
+
+.ourServiceCard .cardInfo h6 {
+  font-size: 24px;
+}
+
+.ourServiceCard .cardInfo p {
+  letter-spacing: -0;
+  margin-top: 14px;
+  font-size: 16px;
+  color: #e6e6e6;
+}
+
+.ourServiceCard:last-child {
+  border-right: none;
+}
+
+.ourServiceCard button {
+  background-color: #262626;
+  max-width: 346px;
+  width: 100%;
+  padding: 14px 16px;
+  border-radius: 6px;
+  margin-top: 84px;
+  text-align: center;
+}
+
+/* our service end */
+
+/* footer start */
+footer {
+  width: 100%;
+  background-color: #1a1a1a;
+  display: flex;
+  justify-content: center;
+  padding: 40px 0;
+  border: 1px solid #262626;
+}
+
+footer .footerContainer {
+  display: flex;
+  flex-direction: column;
+  max-width: 1280px;
+  width: 100%;
+}
+
+footer .footerTop {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid #262626;
+  padding-bottom: 40px;
+}
+footer .footerTop .logoFooter img {
+  width: 118px;
+  height: 40px;
+}
+.footerTop nav {
+  display: flex;
+  gap: 20px;
+}
+.footerTop .footerContact {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+  padding: 10px 10px 10px 20px;
+  border-radius: 8px;
+  border: 1px solid #262626;
+}
+.footerTop .footerContact .contactInfo {
+  display: flex;
+  gap: 10px;
+}
+footer nav a {
+  color: #e6e6e6;
+  font-weight: 500;
+}
+
+footer .contactInfo img {
+  background: linear-gradient(to bottom, #242424, rgba(36, 36, 36, 0));
+  border-radius: 6px;
+  width: 52px;
+  height: 52px;
+}
+footer .footerContact p {
+  font-weight: 500;
+  color: #e6e6e6;
+}
+.footerBottom {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 40px;
+}
+.footerBottom .contactViaSocials {
+  display: flex;
+  gap: 22px;
+}
+.footerBottom .contactViaSocials a {
+  color: #e6e6e6;
+}
+.contactEmail,
+.contactPhone,
+.contactLocation {
+  display: flex;
+  gap: 6px;
+  padding-bottom: 12px;
+  border-bottom: 1px solid #262626;
+}
+
+.footerBottom .extraFooterParagraph {
+  font-size: 14px;
+  color: #98989a60;
+}
+
+/* footer end */
+=======
 /* footer mobile start */
 @media (max-width: 390px) {
   footer {
