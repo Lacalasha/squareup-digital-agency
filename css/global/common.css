@@ -218,7 +218,6 @@ main {
   }
 }
 
-
 /* our service start */
 
 .ourServiceSection {
@@ -230,20 +229,20 @@ main {
 }
 
 .ourServiceContainer {
-  position: relative;
+  max-width: 1280px;
+  width: 100%;
+  height: 280px;
   display: flex;
   justify-content: center;
   align-items: center;
-}
-
-.ourServiceContainer img {
-  width: 100%;
-  height: auto;
-  opacity: 60%;
+  background-image: url("/assets/images/OurServices.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-color: rgba(0, 0, 0, 0.75);
+  background-blend-mode: darken;
 }
 
 .ourServicesText {
-  position: absolute;
   text-align: center;
   color: white;
 }
@@ -388,7 +387,7 @@ footer .footerContact p {
 }
 
 /* footer end */
-=======
+
 /* footer mobile start */
 @media (max-width: 390px) {
   footer {
