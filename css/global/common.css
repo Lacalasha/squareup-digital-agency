@@ -256,13 +256,14 @@ main {
 }
 
 .ourServiceCard {
-  max-width: 426px;
+  min-height: 510px;
   border-right: 1px solid #262626;
   padding: 40px;
   color: white;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  flex: 1;
 }
 
 .ourServiceCard .cardInfo img {
@@ -292,7 +293,6 @@ main {
   width: 100%;
   padding: 14px 16px;
   border-radius: 6px;
-  margin-top: 84px;
   text-align: center;
 }
 
