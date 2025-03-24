@@ -350,7 +350,7 @@ main {
   align-items: center;
 }
 
-.aboutUsContainer {
+.aboutUsSection .aboutUsContainer {
   width: 100%;
   height: 280px;
   display: flex;
@@ -363,23 +363,41 @@ main {
   background-blend-mode: darken;
 }
 
-.aboutUsText {
+.aboutUsContainer .aboutUsText {
   text-align: center;
   color: white;
 }
 
-.aboutUsText h4 {
+.aboutUsContainer .aboutUsText h4 {
   font-size: 38px;
 }
 
-.aboutUsText p {
+.aboutUsContainer .aboutUsText p {
   font-size: 16px;
   color: #e6e6e6;
   max-width: 780px;
   width: 100%;
 }
 
-.aboutUsDesc {
+.aboutUsinfoContainer {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-auto-rows: 1fr;
+  margin: 0 auto;
+  width: 100%;
+}
+
+.aboutUsinfoContainer .aboutUsinfo {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 100%;
+  border: 1px solid #262626;
+  padding: 100px 80px;
+}
+
+.aboutUsinfo .aboutUsDesc {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -387,35 +405,16 @@ main {
   gap: 20px;
 }
 
-.aboutUsDesc span {
+.aboutUsinfo .aboutUsDesc span {
   max-width: 520px;
   color: #d8ff99;
   font-size: 20px;
 }
 
-.aboutUsDesc p {
+.aboutUsinfo .aboutUsDesc p {
   max-width: 520px;
   font-size: 16px;
   color: #e6e6e6;
-}
-
-.aboutUsinfoContainer {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  grid-auto-rows: 1fr;
-  gap: 70px;
-  margin: 80px auto;
-  max-width: 1280px;
-  width: 100%;
-  align-items: stretch;
-}
-
-.aboutUsinfo {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  align-items: center;
-  max-width: 100%;
 }
 
 .aboutUsbtnContainer {
@@ -426,7 +425,7 @@ main {
   border-radius: 12px;
 }
 
-.aboutUsbtn {
+.aboutUsbtnContainer .aboutUsbtn {
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -435,18 +434,17 @@ main {
   width: 100%;
 }
 
-.aboutUsbtnText {
-  flex-grow: 1;
+.aboutUsbtn .aboutUsbtnText {
   display: flex;
   flex-direction: column;
 }
 
-.aboutUsbtnText span {
+.aboutUsbtn .aboutUsbtnText span {
   color: white;
   font-size: 16px;
 }
 
-.aboutUsbtnText p {
+.aboutUsbtn .aboutUsbtnText p {
   font-size: 14px;
   color: #e6e6e6;
 }
