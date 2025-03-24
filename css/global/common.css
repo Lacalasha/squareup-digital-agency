@@ -303,16 +303,19 @@ main {
 
 .squareUpBottom {
   display: flex;
-
   width: 100%;
+  border-top: 1px solid #262626;
+  border-bottom: 1px solid #262626;
 }
 
 .squareUpBottom .squareUpBottomOffer {
   display: flex;
   flex-wrap: wrap;
   padding: 60px;
-  display: flex;
   gap: 40px;
+  flex: 1;
+  border-left: 1px solid #262626;
+  border-right: 1px solid #262626;
 }
 
 .squareUpBottomOffer .expertiseOffer .down {
@@ -326,6 +329,7 @@ main {
   justify-content: flex-start;
   align-items: center;
   gap: 20px;
+  font-size: 20px;
 }
 
 .squareUpBottomOffer .squareExpertise .side {
