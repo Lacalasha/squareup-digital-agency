@@ -184,6 +184,11 @@ main {
   left: 50%;
   transform: translate(-50%, 0);
 }
+
+.sliderSection img {
+  max-width: 130px;
+  height: 90px;
+}
 /* our service start */
 
 .ourServiceSection {
@@ -318,6 +323,11 @@ main {
   border-right: 1px solid #262626;
 }
 
+.squareUpBottom .squareUpBottomOffer img {
+  max-width: 88px;
+  height: 88px;
+}
+
 .squareUpBottomOffer .expertiseOffer .down {
   color: #e6e6e699;
 }
@@ -432,6 +442,11 @@ main {
   padding: 14px;
   gap: 12px;
   width: 100%;
+}
+
+.aboutUsbtnContainer .aboutUsbtn img {
+  max-width: 60px;
+  height: 60px;
 }
 
 .aboutUsbtn .aboutUsbtnText {
