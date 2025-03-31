@@ -5,10 +5,10 @@
 }
 .mainContainer .headerContainer {
   width: 100%;
-  background-color: #1a1a1a;
+  background-color: var(--mainBG-color);
   display: flex;
   flex-direction: column;
-  border-bottom: 1px solid #262626;
+  border-bottom: 1px solid var(--comainBG-color);
 
   /* სტილებიაქვს დასამატებელი */
 }
@@ -34,7 +34,7 @@
   border-radius: 6px;
   font-weight: 500;
   font-size: 14px;
-  color: #262626;
+  color: var(--comainBG-color);
 }
 header ul {
   display: flex;
@@ -48,7 +48,7 @@ header ul li:first-child {
   border-radius: 6px;
 }
 header ul a {
-  color: #e6e6e6;
+  color: var(--mainTextColor);
 }
 
 header ul li {
@@ -74,7 +74,7 @@ main {
   display: flex;
   flex-direction: column;
   align-items: center;
-  border: 1px solid #262626;
+  border: 1px solid var(--comainBG-color);
   background-image: url("/assets/images/heroBgOne.png"),
     url("/assets/images/heroBgTwo.png");
   background-repeat: no-repeat, no-repeat;
@@ -101,9 +101,9 @@ main {
   display: flex;
   align-items: center;
   gap: 6px;
-  border: 1px solid #262626;
+  border: 1px solid var(--comainBG-color);
   padding: 18px 30px;
-  background-color: #1a1a1a;
+  background-color: var(--mainBG-color);
   border-radius: 8px;
   font-size: 18px;
   margin-top: 30px;
@@ -114,7 +114,7 @@ main {
 .heroSectionInfo .heroSectionHelpfull button {
   padding: 8px 10px;
   color: #ffffff;
-  background-color: #262626;
+  background-color: var(--comainBG-color);
   border-radius: 6px;
 }
 .heroSection .heroButtonSection {
@@ -124,8 +124,8 @@ main {
 }
 .heroSection .heroButtonSection button {
   padding: 14px 20px;
-  border: 1px solid #262626;
-  background-color: #1a1a1a;
+  border: 1px solid var(--comainBG-color);
+  background-color: var(--mainBG-color);
   color: white;
   border-radius: 8px;
   font-weight: 500;
@@ -134,20 +134,20 @@ main {
 #contactUsButtonGreen {
   font-weight: 500;
   font-size: 15px;
-  color: #262626;
+  color: var(--comainBG-color);
   background-color: var(--greenButton-color);
 }
 /* slider start */
 .sliderSection {
-  background-color: #24242433;
+  background-color: var(--mainBG-color);
   max-width: 1360px;
   width: 100%;
   display: flex;
   align-items: center;
   justify-content: space-between;
   padding: 30px 0;
-  border-left: 1px solid #262626;
-  border-right: 1px solid #262626;
+  border-left: 1px solid var(--comainBG-color);
+  border-right: 1px solid var(--comainBG-color);
   position: relative;
 }
 .sliderSection .sliderZapier {
@@ -171,8 +171,8 @@ main {
 .sliderSection .sliderTrustedCompany {
   max-width: 217px;
   width: 100%;
-  background-color: #1a1a1a;
-  border: 1px solid #262626;
+  background-color: var(--mainBG-color);
+  border: 1px solid var(--comainBG-color);
   font-size: 14px;
   border-radius: 100px;
   padding: 14px 0;
@@ -184,6 +184,11 @@ main {
   left: 50%;
   transform: translate(-50%, 0);
 }
+
+.sliderSection img {
+  max-width: 130px;
+  height: 90px;
+}
 /* our service start */
 
 .ourServiceSection {
@@ -191,7 +196,7 @@ main {
   width: 100%;
   display: flex;
   flex-direction: column;
-  border: 1px solid #262626;
+  border: 1px solid var(--comainBG-color);
 }
 
 .ourServiceContainer {
@@ -222,7 +227,7 @@ main {
 
 .ourServiceCard {
   min-height: 510px;
-  border-right: 1px solid #262626;
+  border-right: 1px solid var(--comainBG-color);
   max-width: 426px;
   padding: 40px;
   color: white;
@@ -246,7 +251,7 @@ main {
   letter-spacing: -0;
   margin-top: 14px;
   font-size: 16px;
-  color: #e6e6e6;
+  color: var(--mainTextColor);
 }
 
 .ourServiceCard:last-child {
@@ -254,7 +259,7 @@ main {
 }
 
 .ourServiceCard button {
-  background-color: #262626;
+  background-color: var(--comainBG-color);
   max-width: 346px;
   width: 100%;
   padding: 14px 16px;
@@ -269,7 +274,7 @@ main {
 .chooseSquareUp {
   max-width: 1360px;
   width: 100%;
-  border: 1px solid #262626;
+  border: 1px solid var(--comainBG-color);
 }
 
 .chooseSquareUp .squareUpTop {
@@ -295,7 +300,7 @@ main {
 
 .chooseSquareUp .squareUpTop p {
   font-weight: 400;
-  color: #e6e6e6;
+  color: var(--mainTextColor);
   max-width: 779px;
   width: 100%;
   text-align: center;
@@ -304,8 +309,8 @@ main {
 .squareUpBottom {
   display: flex;
   width: 100%;
-  border-top: 1px solid #262626;
-  border-bottom: 1px solid #262626;
+  border-top: 1px solid var(--comainBG-color);
+  border-bottom: 1px solid var(--comainBG-color);
 }
 
 .squareUpBottom .squareUpBottomOffer {
@@ -314,12 +319,17 @@ main {
   padding: 60px;
   gap: 40px;
   flex: 1;
-  border-left: 1px solid #262626;
-  border-right: 1px solid #262626;
+  border-left: 1px solid var(--comainBG-color);
+  border-right: 1px solid var(--comainBG-color);
+}
+
+.squareUpBottom .squareUpBottomOffer img {
+  max-width: 88px;
+  height: 88px;
 }
 
 .squareUpBottomOffer .expertiseOffer .down {
-  color: #e6e6e699;
+  color: var(--mainTextColor);
 }
 
 .squareUpBottomOffer .squareExpertise {
@@ -346,7 +356,7 @@ main {
   width: 100%;
   display: flex;
   flex-direction: column;
-  border: 1px solid #262626;
+  border: 1px solid var(--comainBG-color);
   align-items: center;
 }
 
@@ -374,7 +384,7 @@ main {
 
 .aboutUsContainer .aboutUsText p {
   font-size: 16px;
-  color: #e6e6e6;
+  color: var(--mainTextColor);
   max-width: 780px;
   width: 100%;
 }
@@ -393,7 +403,7 @@ main {
   justify-content: space-between;
   align-items: center;
   max-width: 100%;
-  border: 1px solid #262626;
+  border: 1px solid var(--comainBG-color);
   padding: 100px 80px;
 }
 
@@ -414,14 +424,14 @@ main {
 .aboutUsinfo .aboutUsDesc p {
   max-width: 520px;
   font-size: 16px;
-  color: #e6e6e6;
+  color: var(--mainTextColor);
 }
 
 .aboutUsbtnContainer {
   max-width: 520px;
   width: 100%;
-  border: 1px solid #262626;
-  background-color: #1a1a1a;
+  border: 1px solid var(--comainBG-color);
+  background-color: var(--mainBG-color);
   border-radius: 12px;
 }
 
@@ -432,6 +442,11 @@ main {
   padding: 14px;
   gap: 12px;
   width: 100%;
+}
+
+.aboutUsbtnContainer .aboutUsbtn img {
+  max-width: 60px;
+  height: 60px;
 }
 
 .aboutUsbtn .aboutUsbtnText {
@@ -446,12 +461,12 @@ main {
 
 .aboutUsbtn .aboutUsbtnText p {
   font-size: 14px;
-  color: #e6e6e6;
+  color: var(--mainTextColor);
 }
 
 .aboutUsbtn button {
   border-radius: 6px;
-  background-color: #262626;
+  background-color: var(--comainBG-color);
   color: white;
   padding: 14px 16px;
   font-size: 14px;
@@ -463,11 +478,11 @@ main {
 /* footer start */
 footer {
   width: 100%;
-  background-color: #1a1a1a;
+  background-color: var(--mainBG-color);
   display: flex;
   justify-content: center;
   padding: 40px 0;
-  border: 1px solid #262626;
+  border: 1px solid var(--comainBG-color);
 }
 
 footer .footerContainer {
@@ -483,7 +498,7 @@ footer .footerTop {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  border-bottom: 1px solid #262626;
+  border-bottom: 1px solid var(--comainBG-color);
   padding-bottom: 40px;
 }
 footer .footerTop .logoFooter img {
@@ -500,14 +515,14 @@ footer .footerTop .logoFooter img {
   align-items: center;
   padding: 10px 10px 10px 20px;
   border-radius: 8px;
-  border: 1px solid #262626;
+  border: 1px solid var(--comainBG-color);
 }
 .footerTop .footerContact .contactInfo {
   display: flex;
   gap: 10px;
 }
 footer nav a {
-  color: #e6e6e6;
+  color: var(--mainTextColor);
   font-weight: 500;
 }
 
@@ -519,7 +534,7 @@ footer .contactInfo img {
 }
 footer .footerContact p {
   font-weight: 500;
-  color: #e6e6e6;
+  color: var(--mainTextColor);
 }
 .footerBottom {
   width: 100%;
@@ -533,7 +548,7 @@ footer .footerContact p {
   gap: 22px;
 }
 .footerBottom .contactViaSocials a {
-  color: #e6e6e6;
+  color: var(--mainTextColor);
 }
 .contactEmail,
 .contactPhone,
@@ -541,7 +556,7 @@ footer .footerContact p {
   display: flex;
   gap: 6px;
   padding-bottom: 12px;
-  border-bottom: 1px solid #262626;
+  border-bottom: 1px solid var(--comainBG-color);
 }
 
 .footerBottom .extraFooterParagraph {
@@ -558,7 +573,7 @@ footer .footerContact p {
     position: fixed;
     left: -100%;
     top: 0;
-    background-color: black;
+    background-color: var(--mainBG-color);
     width: 100%;
     height: 100%;
     padding: 96px 56px 72px;
@@ -599,7 +614,7 @@ footer .footerContact p {
     top: 20px;
     right: 30px;
     font-size: 24px;
-    color: white;
+    color: var(--mainTextColor);
     cursor: pointer;
   }
   .navToggle {
@@ -624,7 +639,7 @@ footer .footerContact p {
     width: 100%;
     max-width: 358px;
     padding: 50px 16px;
-    border: 1px solid #262626;
+    border: 1px solid var(--comainBG-color);
   }
   .ourServiceContainer .ourServicesText {
     font-size: 14px;
@@ -638,7 +653,7 @@ footer .footerContact p {
   .ourServiceCards .ourServiceCard {
     width: 100%;
     max-width: 358px;
-    border-top: 1px solid #262626;
+    border-top: 1px solid var(--comainBG-color);
     border-right: none;
   }
   .ourServiceCards .cardName {
@@ -688,7 +703,7 @@ footer .footerContact p {
     justify-content: center;
     padding-top: 15px;
     gap: 20px;
-    border-top: 1px solid #262626;
+    border-top: 1px solid var(--comainBG-color);
   }
 
   footer .footerTop .footerContact {
